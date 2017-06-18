@@ -133,10 +133,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ATSBaseClass.cpp" />
-    <ClCompile Include="UIMain.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="UIMain.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -145,6 +141,20 @@
     <EmbeddedResource Include="UIMain.resx">
       <DependentUpon>UIMain.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\ATSNetwork.cpp" />
+    <ClCompile Include="Classes\ATSPaymentBroker.cpp" />
+    <ClCompile Include="Classes\ATSSystem.cpp" />
+    <ClCompile Include="Classes\ATSTimer.cpp" />
+    <ClCompile Include="Classes\Database\ATSCustomer.cpp" />
+    <ClCompile Include="Classes\Database\ATSDBController.cpp" />
+    <ClCompile Include="Classes\Database\ATSEvent.cpp" />
+    <ClCompile Include="Classes\Database\ATSIController.cpp" />
+    <ClCompile Include="Classes\Database\ATSTicket.cpp" />
+    <ClCompile Include="Classes\Database\ATSVendor.cpp" />
+    <ClCompile Include="Classes\Templates\ATSBaseClass.cpp" />
+    <ClCompile Include="UIMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
