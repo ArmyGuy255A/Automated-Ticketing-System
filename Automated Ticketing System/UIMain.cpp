@@ -1,4 +1,7 @@
+#include "stdafx.h"
 #include "UIMain.h"
+
+
 //#include "Classes\Database\ATSIController.cpp"
 
 using namespace System;
@@ -11,4 +14,5 @@ void Main(array<String^>^ args) {
 	AutomatedTicketingSystem::UIMain form;
 	Application::Run(%form);
 }
+
 

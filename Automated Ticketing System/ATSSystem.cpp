@@ -1,10 +1,11 @@
 // ATSSystem.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
-#include "Database\ATSDBController.cpp"
+#include "ATSDBController.cpp"
 #include "ATSTimer.cpp"
+
 
 using namespace std;
 

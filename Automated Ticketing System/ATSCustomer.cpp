@@ -1,8 +1,10 @@
 // ATSCustomer.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
+
+
 using namespace std;
 
 class ATSCustomer {

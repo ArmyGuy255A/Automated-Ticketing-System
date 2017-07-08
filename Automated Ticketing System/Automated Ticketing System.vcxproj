@@ -90,6 +90,9 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -102,6 +105,9 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -111,6 +117,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -120,6 +129,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -133,28 +145,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UIAvailability.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UIConfig.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="UIMain.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UIPurchase.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UIRedeem.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UIAvailability.resx">
+      <DependentUpon>UIAvailability.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIConfig.resx">
+      <DependentUpon>UIConfig.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIMain.resx">
       <DependentUpon>UIMain.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIPurchase.resx">
+      <DependentUpon>UIPurchase.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIRedeem.resx">
+      <DependentUpon>UIRedeem.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Classes\ATSNetwork.cpp" />
-    <ClCompile Include="Classes\ATSPaymentBroker.cpp" />
-    <ClCompile Include="Classes\ATSSystem.cpp" />
-    <ClCompile Include="Classes\ATSTimer.cpp" />
-    <ClCompile Include="Classes\Database\ATSCustomer.cpp" />
-    <ClCompile Include="Classes\Database\ATSDBController.cpp" />
-    <ClCompile Include="Classes\Database\ATSEvent.cpp" />
-    <ClCompile Include="Classes\Database\ATSIController.cpp" />
-    <ClCompile Include="Classes\Database\ATSTicket.cpp" />
-    <ClCompile Include="Classes\Database\ATSVendor.cpp" />
-    <ClCompile Include="Classes\Templates\ATSBaseClass.cpp" />
+    <ClCompile Include="ATSBaseClass.cpp" />
+    <ClCompile Include="ATSCustomer.cpp" />
+    <ClCompile Include="ATSDBController.cpp" />
+    <ClCompile Include="ATSEvent.cpp" />
+    <ClCompile Include="ATSIController.cpp" />
+    <ClCompile Include="ATSNetwork.cpp" />
+    <ClCompile Include="ATSPaymentBroker.cpp" />
+    <ClCompile Include="ATSSystem.cpp" />
+    <ClCompile Include="ATSTicket.cpp" />
+    <ClCompile Include="ATSTimer.cpp" />
+    <ClCompile Include="ATSVendor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UIAvailability.cpp" />
+    <ClCompile Include="UIConfig.cpp" />
     <ClCompile Include="UIMain.cpp" />
+    <ClCompile Include="UIPurchase.cpp" />
+    <ClCompile Include="UIRedeem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="MoviePoster1.jpg" />
+    <Image Include="MoviePoster2.jpg" />
+    <Image Include="MoviePoster3.jpg" />
+    <Image Include="MoviePoster4.jpg" />
+    <Image Include="MoviePoster5.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

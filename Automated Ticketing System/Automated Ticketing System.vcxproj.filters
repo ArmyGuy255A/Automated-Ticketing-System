@@ -18,9 +18,27 @@
     <ClInclude Include="UIMain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UIAvailability.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIRedeem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPurchase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UIMain.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIConfig.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>
@@ -28,38 +46,70 @@
     <ClCompile Include="UIMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\ATSNetwork.cpp">
+    <ClCompile Include="UIAvailability.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIRedeem.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPurchase.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIConfig.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ATSBaseClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\ATSPaymentBroker.cpp">
+    <ClCompile Include="ATSCustomer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\ATSSystem.cpp">
+    <ClCompile Include="ATSDBController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\ATSTimer.cpp">
+    <ClCompile Include="ATSEvent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Database\ATSCustomer.cpp">
+    <ClCompile Include="ATSIController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Database\ATSDBController.cpp">
+    <ClCompile Include="ATSNetwork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Database\ATSEvent.cpp">
+    <ClCompile Include="ATSPaymentBroker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Database\ATSIController.cpp">
+    <ClCompile Include="ATSSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Database\ATSTicket.cpp">
+    <ClCompile Include="ATSTicket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Database\ATSVendor.cpp">
+    <ClCompile Include="ATSTimer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Templates\ATSBaseClass.cpp">
+    <ClCompile Include="ATSVendor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="MoviePoster1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="MoviePoster2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="MoviePoster3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="MoviePoster4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="MoviePoster5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

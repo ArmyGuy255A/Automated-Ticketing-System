@@ -1,12 +1,14 @@
 // ATSDBController.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 #include "ATSCustomer.cpp"
 #include "ATSTicket.cpp"
 #include "ATSVendor.cpp"
 #include "ATSEvent.cpp"
+
+
 
 using namespace std;
 

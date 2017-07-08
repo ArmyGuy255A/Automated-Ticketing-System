@@ -1,9 +1,10 @@
 // ATSATSNetwork.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
 #include <windows.networking.h>
+
 using namespace std;
 
 enum interfaceType {

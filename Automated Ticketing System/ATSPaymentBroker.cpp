@@ -1,10 +1,12 @@
 // ATSPaymentBroker.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
-#include "..\Classes\ATSNetwork.cpp"
-#include "..\Classes\Database\ATSDBController.cpp"
+#include "ATSNetwork.cpp"
+#include "ATSDBController.cpp"
+
+
 using namespace std;
 	
 enum paymentType {

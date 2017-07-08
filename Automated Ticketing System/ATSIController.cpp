@@ -1,18 +1,22 @@
-// ATSBaseClass.cpp : Defines the base class for the ATS.
+// ATSIController.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
+#include "UIMain.h"
+#include "ATSDBController.cpp"
+
+
 using namespace std;
 
-class baseClass {
+class ATSIController {
 public:
 	string name;
 	//Default Constructor
-	baseClass() {}
+	ATSIController() {}
 
 	//Overloaded constructor
-	baseClass(string className) {
+	ATSIController(string className) {
 		name = className;
 		//Since this is private, you can only use it within the class. It's protected.
 		privateFunction();

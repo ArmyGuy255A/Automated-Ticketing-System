@@ -1,24 +1,24 @@
-// ATSTicket.cpp : Defines the base class for the ATS.
+// ATSEvent.cpp : Defines the base class for the ATS.
 //
-
+#include "stdafx.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 
-class ATSTicket {
+class ATSEvent {
 public:
-	int ticketId;
-	int ticketOwner;
-	int eventInfo;
-	int amount;
-	bool ticketUsed;
+	int eventId;
+	int eventName;
+	string dateTime;
+	string location;
 
 	//Default Constructor
-	ATSTicket() {}
+	ATSEvent() {}
 
 	//Overloaded constructor
-	ATSTicket(int tID) {
-		ticketId = getTicketId(tID);
+	ATSEvent(int eID) {
+		eventId = getEventId(eID);
 		//Since this is private, you can only use it within the class. It's protected.
 		//privateFunction();
 	};
@@ -34,44 +34,36 @@ public:
 //within the class itself.
 private:
 	//Getters
-	int getTicketId(int tID) {
+	int getEventId(int eID) {
+
+	}
+	
+	int getEventName() {
 
 	}
 
-	int getTicketOwner() {
+	string getDateTime() {
 
 	}
 
-	int getEventInfo() {
-
-	}
-
-	int getAmount() {
-
-	}
-
-	bool getTicketUsed(){
+	string getLocation() {
 
 	}
 
 	//Setters
-	int setTicketId() {
+	int setEventId(int eID) {
 
 	}
 
-	int setTicketOwner() {
+	int setEventName() {
 
 	}
 
-	int setEventInfo() {
+	string setDateTime() {
 
 	}
 
-	int setAmount() {
-
-	}
-
-	bool setTicketUsed() {
+	string setLocation() {
 
 	}
 };
