@@ -5,6 +5,12 @@
 #include <string>
 #include <windows.networking.h>
 
+/* Version Control Table
+Date		Time		LastName	ChangeDescription
+08JUL17		1700CET		DIEPPA		Added Precompiled Header
+
+*/
+
 using namespace std;
 
 enum interfaceType {
