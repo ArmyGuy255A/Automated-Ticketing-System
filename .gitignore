@@ -259,3 +259,11 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Automated Ticketing System/UIRedeem.resx
+/Automated Ticketing System/UIRedeem.h
+/Automated Ticketing System/UIRedeem.cpp
+/Automated Ticketing System/UIPurchase.resx
+/Automated Ticketing System/UIPurchase.h
+/Automated Ticketing System/UIPurchase.cpp
+/Automated Ticketing System/UIPurchase.cpp
+/Automated Ticketing System/UIPurchase.h
