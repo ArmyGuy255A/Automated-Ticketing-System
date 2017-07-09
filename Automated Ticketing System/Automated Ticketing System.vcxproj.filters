@@ -56,6 +56,9 @@
     <EmbeddedResource Include="UIRedeem.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIFeatureUnavailable.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UIMain.cpp">
@@ -147,6 +150,18 @@
       <Filter>Database</Filter>
     </None>
     <None Include="proj_log.ldf">
+      <Filter>Database</Filter>
+    </None>
+    <None Include="customers.csv">
+      <Filter>Database</Filter>
+    </None>
+    <None Include="events.csv">
+      <Filter>Database</Filter>
+    </None>
+    <None Include="tickets.csv">
+      <Filter>Database</Filter>
+    </None>
+    <None Include="vendors.csv">
       <Filter>Database</Filter>
     </None>
   </ItemGroup>

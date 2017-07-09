@@ -225,9 +225,13 @@
     <Image Include="paypal.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="customers.csv" />
+    <None Include="events.csv" />
     <None Include="master.bak" />
     <None Include="proj.mdf" />
     <None Include="proj_log.ldf" />
+    <None Include="tickets.csv" />
+    <None Include="vendors.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
