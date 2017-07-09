@@ -45,7 +45,7 @@ namespace AutomatedTicketingSystem {
 	private: System::Windows::Forms::ListView^  listView1;
 	private: System::Windows::Forms::ImageList^  imageList1;
 	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::DateTimePicker^  dateTimePicker1;
+
 
 	private: System::ComponentModel::IContainer^  components;
 	protected:
@@ -75,16 +75,16 @@ namespace AutomatedTicketingSystem {
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
 			this->imageList1 = (gcnew System::Windows::Forms::ImageList(this->components));
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
 			this->button1->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Calibri", 26, System::Drawing::FontStyle::Bold));
-			this->button1->Location = System::Drawing::Point(0, 693);
+			this->button1->Location = System::Drawing::Point(0, 1333);
+			this->button1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(1024, 75);
+			this->button1->Size = System::Drawing::Size(2048, 144);
 			this->button1->TabIndex = 5;
 			this->button1->Text = L"BACK";
 			this->button1->UseVisualStyleBackColor = true;
@@ -96,8 +96,9 @@ namespace AutomatedTicketingSystem {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Calibri", 48, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(0, 0);
+			this->label1->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(1024, 75);
+			this->label1->Size = System::Drawing::Size(2048, 144);
 			this->label1->TabIndex = 6;
 			this->label1->Text = L"Purchase Your Tickets";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -113,10 +114,11 @@ namespace AutomatedTicketingSystem {
 					listViewItem3, listViewItem4, listViewItem5
 			});
 			this->listView1->LargeImageList = this->imageList1;
-			this->listView1->Location = System::Drawing::Point(0, 110);
+			this->listView1->Location = System::Drawing::Point(0, 211);
+			this->listView1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
 			this->listView1->MultiSelect = false;
 			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(1024, 288);
+			this->listView1->Size = System::Drawing::Size(2048, 550);
 			this->listView1->TabIndex = 7;
 			this->listView1->TileSize = System::Drawing::Size(160, 230);
 			this->listView1->UseCompatibleStateImageBehavior = false;
@@ -138,33 +140,27 @@ namespace AutomatedTicketingSystem {
 			this->label2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(0, 75);
+			this->label2->Location = System::Drawing::Point(0, 144);
+			this->label2->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(1024, 35);
+			this->label2->Size = System::Drawing::Size(2048, 67);
 			this->label2->TabIndex = 8;
 			this->label2->Text = L"Select an item from the list below";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// dateTimePicker1
-			// 
-			this->dateTimePicker1->Location = System::Drawing::Point(426, 425);
-			this->dateTimePicker1->Name = L"dateTimePicker1";
-			this->dateTimePicker1->Size = System::Drawing::Size(200, 20);
-			this->dateTimePicker1->TabIndex = 9;
-			// 
 			// UIPurchase
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1024, 768);
+			this->ClientSize = System::Drawing::Size(2048, 1477);
 			this->ControlBox = false;
-			this->Controls->Add(this->dateTimePicker1);
 			this->Controls->Add(this->listView1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->MinimumSize = System::Drawing::Size(1024, 768);
+			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->MinimumSize = System::Drawing::Size(2048, 1477);
 			this->Name = L"UIPurchase";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Purchase Tickets";
