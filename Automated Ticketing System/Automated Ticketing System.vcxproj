@@ -33,6 +33,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -40,6 +41,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -47,6 +49,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -54,6 +57,7 @@
     <PlatformToolset>v141</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -152,6 +156,9 @@
     <ClInclude Include="UIConfig.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="UIFeatureUnavailable.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="UIMain.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -168,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIConfig.resx">
       <DependentUpon>UIConfig.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIFeatureUnavailable.resx">
+      <DependentUpon>UIFeatureUnavailable.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIMain.resx">
       <DependentUpon>UIMain.h</DependentUpon>
@@ -199,16 +209,20 @@
     </ClCompile>
     <ClCompile Include="UIAvailability.cpp" />
     <ClCompile Include="UIConfig.cpp" />
+    <ClCompile Include="UIFeatureUnavailable.cpp" />
     <ClCompile Include="UIMain.cpp" />
     <ClCompile Include="UIPurchase.cpp" />
     <ClCompile Include="UIRedeem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="applepay.jpg" />
+    <Image Include="googlewallet.jpg" />
     <Image Include="MoviePoster1.jpg" />
     <Image Include="MoviePoster2.jpg" />
     <Image Include="MoviePoster3.jpg" />
     <Image Include="MoviePoster4.jpg" />
     <Image Include="MoviePoster5.jpg" />
+    <Image Include="paypal.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="master.bak" />

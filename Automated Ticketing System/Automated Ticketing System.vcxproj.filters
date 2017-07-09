@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -16,25 +12,32 @@
     <Filter Include="Database">
       <UniqueIdentifier>{22309c18-c9bc-40de-8ff0-96673ddc7f93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="User Interface">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UIMain.h">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClInclude>
     <ClInclude Include="UIAvailability.h">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClInclude>
     <ClInclude Include="UIRedeem.h">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClInclude>
     <ClInclude Include="UIPurchase.h">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClInclude>
     <ClInclude Include="UIConfig.h">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="UIFeatureUnavailable.h">
+      <Filter>User Interface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -59,19 +62,19 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UIAvailability.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClCompile>
     <ClCompile Include="UIRedeem.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClCompile>
     <ClCompile Include="UIPurchase.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClCompile>
     <ClCompile Include="UIConfig.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>User Interface</Filter>
     </ClCompile>
     <ClCompile Include="ATSBaseClass.cpp">
       <Filter>Source Files</Filter>
@@ -106,6 +109,9 @@
     <ClCompile Include="ATSVendor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UIFeatureUnavailable.cpp">
+      <Filter>User Interface</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="MoviePoster1.jpg">
@@ -121,6 +127,15 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="MoviePoster5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="googlewallet.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="paypal.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="applepay.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

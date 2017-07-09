@@ -1,10 +1,12 @@
 /* Version Control Table
 Date		Time		LastName	ChangeDescription
-08JUL17		1700CET		DIEPPA		Added Precompiled Header
+08JUL17		1700CET		DIEPPA		Added Controls
+09JUL17		1200CET		DIEPPA		Added Payment Controls
 
 */
 
 #pragma once
+#include "UIFeatureUnavailable.h"
 
 namespace AutomatedTicketingSystem {
 
@@ -45,6 +47,15 @@ namespace AutomatedTicketingSystem {
 	private: System::Windows::Forms::ListView^  listView1;
 	private: System::Windows::Forms::ImageList^  imageList1;
 	private: System::Windows::Forms::Label^  label2;
+	private: System::Windows::Forms::MonthCalendar^  monthCalendar1;
+	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::ListView^  listView2;
+	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::ImageList^  imageList2;
+	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::Button^  button4;
+	private: System::Windows::Forms::Label^  label5;
 
 
 	private: System::ComponentModel::IContainer^  components;
@@ -64,17 +75,38 @@ namespace AutomatedTicketingSystem {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::Windows::Forms::ListViewItem^  listViewItem1 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 1", 0));
-			System::Windows::Forms::ListViewItem^  listViewItem2 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 2", 1));
-			System::Windows::Forms::ListViewItem^  listViewItem3 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 3", 2));
-			System::Windows::Forms::ListViewItem^  listViewItem4 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 4", 3));
-			System::Windows::Forms::ListViewItem^  listViewItem5 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 5", 4));
+			System::Windows::Forms::ListViewItem^  listViewItem30 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 1", 0));
+			System::Windows::Forms::ListViewItem^  listViewItem31 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 2", 1));
+			System::Windows::Forms::ListViewItem^  listViewItem32 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 3", 2));
+			System::Windows::Forms::ListViewItem^  listViewItem33 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 4", 3));
+			System::Windows::Forms::ListViewItem^  listViewItem34 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 5", 4));
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(UIPurchase::typeid));
+			System::Windows::Forms::ListViewItem^  listViewItem18 = (gcnew System::Windows::Forms::ListViewItem(L"1100"));
+			System::Windows::Forms::ListViewItem^  listViewItem19 = (gcnew System::Windows::Forms::ListViewItem(L"1200"));
+			System::Windows::Forms::ListViewItem^  listViewItem20 = (gcnew System::Windows::Forms::ListViewItem(L"1300"));
+			System::Windows::Forms::ListViewItem^  listViewItem21 = (gcnew System::Windows::Forms::ListViewItem(L"1400"));
+			System::Windows::Forms::ListViewItem^  listViewItem22 = (gcnew System::Windows::Forms::ListViewItem(L"1500"));
+			System::Windows::Forms::ListViewItem^  listViewItem35 = (gcnew System::Windows::Forms::ListViewItem(L"1600"));
+			System::Windows::Forms::ListViewItem^  listViewItem36 = (gcnew System::Windows::Forms::ListViewItem(L"1700"));
+			System::Windows::Forms::ListViewItem^  listViewItem37 = (gcnew System::Windows::Forms::ListViewItem(L"1800"));
+			System::Windows::Forms::ListViewItem^  listViewItem38 = (gcnew System::Windows::Forms::ListViewItem(L"1900"));
+			System::Windows::Forms::ListViewItem^  listViewItem39 = (gcnew System::Windows::Forms::ListViewItem(L"2000"));
+			System::Windows::Forms::ListViewItem^  listViewItem40 = (gcnew System::Windows::Forms::ListViewItem(L"2100"));
+			System::Windows::Forms::ListViewItem^  listViewItem41 = (gcnew System::Windows::Forms::ListViewItem(L"2200"));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
 			this->imageList1 = (gcnew System::Windows::Forms::ImageList(this->components));
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->monthCalendar1 = (gcnew System::Windows::Forms::MonthCalendar());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->listView2 = (gcnew System::Windows::Forms::ListView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->imageList2 = (gcnew System::Windows::Forms::ImageList(this->components));
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -82,7 +114,7 @@ namespace AutomatedTicketingSystem {
 			this->button1->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Calibri", 26, System::Drawing::FontStyle::Bold));
 			this->button1->Location = System::Drawing::Point(0, 1333);
-			this->button1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button1->Margin = System::Windows::Forms::Padding(6);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(2048, 144);
 			this->button1->TabIndex = 5;
@@ -106,19 +138,20 @@ namespace AutomatedTicketingSystem {
 			// listView1
 			// 
 			this->listView1->Alignment = System::Windows::Forms::ListViewAlignment::SnapToGrid;
-			this->listView1->Dock = System::Windows::Forms::DockStyle::Top;
+			this->listView1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->listView1->GridLines = true;
 			this->listView1->HideSelection = false;
 			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(5) {
-				listViewItem1, listViewItem2,
-					listViewItem3, listViewItem4, listViewItem5
+				listViewItem30, listViewItem31,
+					listViewItem32, listViewItem33, listViewItem34
 			});
 			this->listView1->LargeImageList = this->imageList1;
-			this->listView1->Location = System::Drawing::Point(0, 211);
-			this->listView1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->listView1->Location = System::Drawing::Point(2, 610);
+			this->listView1->Margin = System::Windows::Forms::Padding(6);
 			this->listView1->MultiSelect = false;
 			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(2048, 550);
+			this->listView1->Size = System::Drawing::Size(2044, 258);
 			this->listView1->TabIndex = 7;
 			this->listView1->TileSize = System::Drawing::Size(160, 230);
 			this->listView1->UseCompatibleStateImageBehavior = false;
@@ -137,7 +170,8 @@ namespace AutomatedTicketingSystem {
 			// 
 			// label2
 			// 
-			this->label2->Dock = System::Windows::Forms::DockStyle::Top;
+			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(0, 144);
@@ -145,8 +179,127 @@ namespace AutomatedTicketingSystem {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(2048, 67);
 			this->label2->TabIndex = 8;
-			this->label2->Text = L"Select an item from the list below";
+			this->label2->Text = L"1. Select a Date";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// monthCalendar1
+			// 
+			this->monthCalendar1->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->monthCalendar1->CalendarDimensions = System::Drawing::Size(2, 1);
+			this->monthCalendar1->Location = System::Drawing::Point(622, 220);
+			this->monthCalendar1->MaxSelectionCount = 1;
+			this->monthCalendar1->Name = L"monthCalendar1";
+			this->monthCalendar1->TabIndex = 9;
+			// 
+			// label3
+			// 
+			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(0, 535);
+			this->label3->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(2048, 67);
+			this->label3->TabIndex = 10;
+			this->label3->Text = L"2. Select a Movie";
+			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label4
+			// 
+			this->label4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(0, 874);
+			this->label4->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(2048, 67);
+			this->label4->TabIndex = 11;
+			this->label4->Text = L"3. Select a Time";
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// listView2
+			// 
+			this->listView2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->listView2->HideSelection = false;
+			this->listView2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(12) {
+				listViewItem18, listViewItem19,
+					listViewItem20, listViewItem21, listViewItem22, listViewItem35, listViewItem36, listViewItem37, listViewItem38, listViewItem39,
+					listViewItem40, listViewItem41
+			});
+			this->listView2->Location = System::Drawing::Point(0, 944);
+			this->listView2->Name = L"listView2";
+			this->listView2->Size = System::Drawing::Size(2046, 65);
+			this->listView2->TabIndex = 12;
+			this->listView2->TileSize = System::Drawing::Size(170, 50);
+			this->listView2->UseCompatibleStateImageBehavior = false;
+			this->listView2->View = System::Windows::Forms::View::Tile;
+			// 
+			// button2
+			// 
+			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button2->ImageIndex = 0;
+			this->button2->ImageList = this->imageList2;
+			this->button2->Location = System::Drawing::Point(498, 1146);
+			this->button2->MaximumSize = System::Drawing::Size(332, 114);
+			this->button2->MinimumSize = System::Drawing::Size(332, 114);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(332, 114);
+			this->button2->TabIndex = 13;
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &UIPurchase::button2_Click);
+			// 
+			// imageList2
+			// 
+			this->imageList2->ImageStream = (cli::safe_cast<System::Windows::Forms::ImageListStreamer^>(resources->GetObject(L"imageList2.ImageStream")));
+			this->imageList2->TransparentColor = System::Drawing::Color::Transparent;
+			this->imageList2->Images->SetKeyName(0, L"applepay.jpg");
+			this->imageList2->Images->SetKeyName(1, L"googlewallet.jpg");
+			this->imageList2->Images->SetKeyName(2, L"paypal.jpg");
+			// 
+			// button3
+			// 
+			this->button3->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button3->ImageIndex = 1;
+			this->button3->ImageList = this->imageList2;
+			this->button3->Location = System::Drawing::Point(864, 1146);
+			this->button3->MaximumSize = System::Drawing::Size(332, 114);
+			this->button3->MinimumSize = System::Drawing::Size(332, 114);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(332, 114);
+			this->button3->TabIndex = 13;
+			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &UIPurchase::button3_Click);
+			// 
+			// button4
+			// 
+			this->button4->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button4->ImageIndex = 2;
+			this->button4->ImageList = this->imageList2;
+			this->button4->Location = System::Drawing::Point(1230, 1146);
+			this->button4->MaximumSize = System::Drawing::Size(332, 114);
+			this->button4->MinimumSize = System::Drawing::Size(332, 114);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(332, 114);
+			this->button4->TabIndex = 13;
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &UIPurchase::button4_Click);
+			// 
+			// label5
+			// 
+			this->label5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(0, 1012);
+			this->label5->Margin = System::Windows::Forms::Padding(6, 0, 6, 0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(2048, 67);
+			this->label5->TabIndex = 11;
+			this->label5->Text = L"4. Select a Payment Method";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// UIPurchase
 			// 
@@ -154,12 +307,20 @@ namespace AutomatedTicketingSystem {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(2048, 1477);
 			this->ControlBox = false;
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->listView2);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->listView1);
+			this->Controls->Add(this->monthCalendar1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Margin = System::Windows::Forms::Padding(6);
 			this->MinimumSize = System::Drawing::Size(2048, 1477);
 			this->Name = L"UIPurchase";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
@@ -178,13 +339,22 @@ namespace AutomatedTicketingSystem {
 	}
 	private: System::Void UIPurchase_Load(System::Object^  sender, System::EventArgs^  e) {
 
-		//Create a calendar view
-
-
-
-
-
 	}
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+	//Load the Feature Unavailable Form
+	UIFeatureUnavailable ^ form = gcnew UIFeatureUnavailable;
+	form->ShowDialog();
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	//Load the Feature Unavailable Form
+	UIFeatureUnavailable ^ form = gcnew UIFeatureUnavailable;
+	form->ShowDialog();
+}
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+	//Load the Feature Unavailable Form
+	UIFeatureUnavailable ^ form = gcnew UIFeatureUnavailable;
+	form->ShowDialog();
+}
 };
 }
 
