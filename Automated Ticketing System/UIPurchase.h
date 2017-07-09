@@ -2,7 +2,7 @@
 Date		Time		LastName	ChangeDescription
 08JUL17		1700CET		DIEPPA		Added Controls
 09JUL17		1200CET		DIEPPA		Added Payment Controls
-
+09JUL17		1220CET		DIEPPA		Adjusted Poster Tile Width
 */
 
 #pragma once
@@ -75,24 +75,24 @@ namespace AutomatedTicketingSystem {
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
-			System::Windows::Forms::ListViewItem^  listViewItem30 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 1", 0));
-			System::Windows::Forms::ListViewItem^  listViewItem31 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 2", 1));
-			System::Windows::Forms::ListViewItem^  listViewItem32 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 3", 2));
-			System::Windows::Forms::ListViewItem^  listViewItem33 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 4", 3));
-			System::Windows::Forms::ListViewItem^  listViewItem34 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 5", 4));
+			System::Windows::Forms::ListViewItem^  listViewItem1 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 1", 0));
+			System::Windows::Forms::ListViewItem^  listViewItem2 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 2", 1));
+			System::Windows::Forms::ListViewItem^  listViewItem3 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 3", 2));
+			System::Windows::Forms::ListViewItem^  listViewItem4 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 4", 3));
+			System::Windows::Forms::ListViewItem^  listViewItem5 = (gcnew System::Windows::Forms::ListViewItem(L"Movie 5", 4));
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(UIPurchase::typeid));
-			System::Windows::Forms::ListViewItem^  listViewItem18 = (gcnew System::Windows::Forms::ListViewItem(L"1100"));
-			System::Windows::Forms::ListViewItem^  listViewItem19 = (gcnew System::Windows::Forms::ListViewItem(L"1200"));
-			System::Windows::Forms::ListViewItem^  listViewItem20 = (gcnew System::Windows::Forms::ListViewItem(L"1300"));
-			System::Windows::Forms::ListViewItem^  listViewItem21 = (gcnew System::Windows::Forms::ListViewItem(L"1400"));
-			System::Windows::Forms::ListViewItem^  listViewItem22 = (gcnew System::Windows::Forms::ListViewItem(L"1500"));
-			System::Windows::Forms::ListViewItem^  listViewItem35 = (gcnew System::Windows::Forms::ListViewItem(L"1600"));
-			System::Windows::Forms::ListViewItem^  listViewItem36 = (gcnew System::Windows::Forms::ListViewItem(L"1700"));
-			System::Windows::Forms::ListViewItem^  listViewItem37 = (gcnew System::Windows::Forms::ListViewItem(L"1800"));
-			System::Windows::Forms::ListViewItem^  listViewItem38 = (gcnew System::Windows::Forms::ListViewItem(L"1900"));
-			System::Windows::Forms::ListViewItem^  listViewItem39 = (gcnew System::Windows::Forms::ListViewItem(L"2000"));
-			System::Windows::Forms::ListViewItem^  listViewItem40 = (gcnew System::Windows::Forms::ListViewItem(L"2100"));
-			System::Windows::Forms::ListViewItem^  listViewItem41 = (gcnew System::Windows::Forms::ListViewItem(L"2200"));
+			System::Windows::Forms::ListViewItem^  listViewItem6 = (gcnew System::Windows::Forms::ListViewItem(L"1100"));
+			System::Windows::Forms::ListViewItem^  listViewItem7 = (gcnew System::Windows::Forms::ListViewItem(L"1200"));
+			System::Windows::Forms::ListViewItem^  listViewItem8 = (gcnew System::Windows::Forms::ListViewItem(L"1300"));
+			System::Windows::Forms::ListViewItem^  listViewItem9 = (gcnew System::Windows::Forms::ListViewItem(L"1400"));
+			System::Windows::Forms::ListViewItem^  listViewItem10 = (gcnew System::Windows::Forms::ListViewItem(L"1500"));
+			System::Windows::Forms::ListViewItem^  listViewItem11 = (gcnew System::Windows::Forms::ListViewItem(L"1600"));
+			System::Windows::Forms::ListViewItem^  listViewItem12 = (gcnew System::Windows::Forms::ListViewItem(L"1700"));
+			System::Windows::Forms::ListViewItem^  listViewItem13 = (gcnew System::Windows::Forms::ListViewItem(L"1800"));
+			System::Windows::Forms::ListViewItem^  listViewItem14 = (gcnew System::Windows::Forms::ListViewItem(L"1900"));
+			System::Windows::Forms::ListViewItem^  listViewItem15 = (gcnew System::Windows::Forms::ListViewItem(L"2000"));
+			System::Windows::Forms::ListViewItem^  listViewItem16 = (gcnew System::Windows::Forms::ListViewItem(L"2100"));
+			System::Windows::Forms::ListViewItem^  listViewItem17 = (gcnew System::Windows::Forms::ListViewItem(L"2200"));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
@@ -143,17 +143,17 @@ namespace AutomatedTicketingSystem {
 			this->listView1->GridLines = true;
 			this->listView1->HideSelection = false;
 			this->listView1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(5) {
-				listViewItem30, listViewItem31,
-					listViewItem32, listViewItem33, listViewItem34
+				listViewItem1, listViewItem2,
+					listViewItem3, listViewItem4, listViewItem5
 			});
 			this->listView1->LargeImageList = this->imageList1;
 			this->listView1->Location = System::Drawing::Point(2, 610);
 			this->listView1->Margin = System::Windows::Forms::Padding(6);
 			this->listView1->MultiSelect = false;
 			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(2044, 258);
+			this->listView1->Size = System::Drawing::Size(2046, 258);
 			this->listView1->TabIndex = 7;
-			this->listView1->TileSize = System::Drawing::Size(160, 230);
+			this->listView1->TileSize = System::Drawing::Size(400, 230);
 			this->listView1->UseCompatibleStateImageBehavior = false;
 			this->listView1->View = System::Windows::Forms::View::Tile;
 			// 
@@ -225,9 +225,9 @@ namespace AutomatedTicketingSystem {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->listView2->HideSelection = false;
 			this->listView2->Items->AddRange(gcnew cli::array< System::Windows::Forms::ListViewItem^  >(12) {
-				listViewItem18, listViewItem19,
-					listViewItem20, listViewItem21, listViewItem22, listViewItem35, listViewItem36, listViewItem37, listViewItem38, listViewItem39,
-					listViewItem40, listViewItem41
+				listViewItem6, listViewItem7,
+					listViewItem8, listViewItem9, listViewItem10, listViewItem11, listViewItem12, listViewItem13, listViewItem14, listViewItem15,
+					listViewItem16, listViewItem17
 			});
 			this->listView2->Location = System::Drawing::Point(0, 944);
 			this->listView2->Name = L"listView2";

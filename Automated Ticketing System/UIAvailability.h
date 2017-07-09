@@ -1,7 +1,7 @@
 /* Version Control Table
 Date		Time		LastName	ChangeDescription
 08JUL17		1700CET		DIEPPA		Added Precompiled Header
-
+09JUL17		1220CET		DIEPPA		Adjusted Poster Tile Width
 */
 
 #pragma once
